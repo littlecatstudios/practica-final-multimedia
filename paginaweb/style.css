@@ -1,0 +1,24 @@
+  @font-face {
+            font-family: Catnopies;
+            src: url("fuentes/Catnopies-Regular.ttf");
+        }
+body{
+     background-color: black;
+    color: white; 
+    font-family: "Crimson Ritual",Crimson Ritual;
+    margin-top: 10em;
+    margin-bottom: 10em;
+    margin-left: 30em;
+    margin-right: 30em;
+    .titulo {
+      font-family: Catnopies;
+    }
+    .centrado{
+        text-align: center;
+    }
+}
+.portada{
+    width:100px;
+    height: 100px;
+}
+
