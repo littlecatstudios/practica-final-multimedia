@@ -8,7 +8,7 @@ body{
     font-family: "Crimson Ritual",Crimson Ritual;
     margin-top: 10em;
     margin-bottom: 10em;
-    margin-left: 30em;
+    margin-left: 20em;
     margin-right: 30em;
     .titulo {
       font-family: Catnopies;
@@ -18,7 +18,17 @@ body{
     }
 }
 .portada{
-    width:100px;
-    height: 100px;
+    width: 100%;
+    height: auto;
 }
-
+.Historia{
+    font-family: Catnopies ;
+}
+.donacion{
+background-color: black;
+border: 5px solid white;
+padding: 1em;
+margin: 20px;
+border-radius: 5px;
+box-shadow: 0 2 px 4 px white;
+}
