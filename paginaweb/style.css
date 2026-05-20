@@ -1,0 +1,82 @@
+  @font-face {
+            font-family: Catnopies;
+            src: url("fuentes/Catnopies-Regular.ttf");
+        }
+
+body{
+     background-color: black;
+    color: white; 
+    max-width:1000px;
+    margin:5% auto; 
+    padding: 10px;
+  
+    .titulo {
+      font-family: Catnopies;
+    }
+}
+.portada{
+    width: 100%;
+    height: auto;
+}
+.centrado{
+        text-align: center;
+    }
+.barra{
+    position: sticky;
+    top:0;
+    width: 100%;
+    background: black;
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    z-index: 100;
+    margin-bottom: 10px;
+}
+.pestana{
+    display:flex;
+    justify-content: center;
+}
+.boton-tab{
+padding: 10px 15px;
+font-size: 12px;
+cursor:pointer;
+color: black;
+}
+.boton-tab.activo{
+color: black;
+font-weight: bold;
+border-bottom: 3 px gray; 
+}
+.division{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    margin-top:20px;
+}
+section[data-tab][data-active="false"] {
+    display: none;
+}
+.section[data-tab][data-active="true"] {
+    display: block;
+}
+
+.sinopsis{
+    font-family: Catnopies ;
+}
+.columnadedonacion{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.donacion{
+background-color: black;
+border: 2px solid white;
+padding: 1em;
+margin: 20px;
+border-radius: 5px;
+box-shadow: 0 2 px 4 px white;
+}
+@media (max-width: 768px) {
+    .division {
+        grid-template-columns: 1fr;
+    }
+}
