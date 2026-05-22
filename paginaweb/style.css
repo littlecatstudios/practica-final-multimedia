@@ -59,20 +59,8 @@ body{
     }
     .pestanas button[data-active="true"]{
         background-color: beige;
-
     }
 
-.detains{
-    margin: 1rem;
-}
-.summary{
-    font-family: "Inter", sans-serif;
-    font-size: 1.6rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 2rem;
-    letter-spacing: -0.037rem;
-}
 .division{
     display:grid;
     grid-template-columns: 2fr 1fr;
@@ -88,6 +76,10 @@ section[data-tab][data-active="false"] {
 
 .sinopsis{
     font-family: Catnopies ;
+}
+.objetivos{
+     font-family: Catnopies ;
+     text-size-adjust: 5 em;
 }
 .columnadedonacion{
     display:flex;
@@ -120,7 +112,6 @@ transition: all 300ms ease;
 background-color: rgb(79, 107, 99);
 }
 .acordeon .contenido-acordeon{
-    padding: 0px;
     max-height: 0;
     overflow: hidden;
     transition:  all 300ms ease;
@@ -142,7 +133,7 @@ background-color: rgb(79, 107, 99);
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 720px) {
     .division {
         grid-template-columns: 1fr;
     }
