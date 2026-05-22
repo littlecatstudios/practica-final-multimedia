@@ -1,12 +1,18 @@
-  @font-face {
-            font-family: Catnopies;
-            src: url("fuentes/Catnopies-Regular.ttf");
-        }
+@font-face {
+    font-family: Catnopies;
+    src: url("fuentes/Catnopies-Regular.ttf");
+}
+@font-face {
+    font-family: Kiddos;
+    src: url("fuentes/KIdDOS-Regular.ttf");
+}
 
 body{
-     background-color: black;
+    font-family: Kiddos;
+    font-size: 23px;
+    background-color: black;
     color: white; 
-    max-width:1000px;
+    max-width:100vw;
     margin:5% auto; 
     padding: 10px;
     display: grid;
@@ -47,7 +53,10 @@ body{
  .pestanas button{
         border: 2px;
         padding: 15px 30px;
-        background-color: white;
+        background-color: black;
+        outline-color: white;
+        font-family: Catnopies;
+        color: white; 
         border-radius: 1em 1em 1em 1em;
     }
     .pestanas button:hover{
@@ -55,10 +64,12 @@ body{
     }
     .pestanas button[data-active="false"]:hover{
         background-color: white;
+        color: black;
 
     }
     .pestanas button[data-active="true"]{
         background-color: beige;
+        color: black;
     }
 
 .division{
@@ -74,9 +85,29 @@ section[data-tab][data-active="false"] {
     display: block;
 }
 
-.sinopsis{
-    font-family: Catnopies ;
+.video-promocional{
+
+    width: 100%;
+    height: 400%;
+    justify-content: center;
+    align-content: center;
+    
+
 }
+.contenedor-del-video{
+
+    display: inline-flex;
+    height: 10vh;
+    width: 60vw;
+    border: thin;
+    border-color: white;
+
+}
+
+.sinopsis{
+    font-family: Catnopies;
+}
+
 .objetivos{
      font-family: Catnopies ;
      text-size-adjust: 5 em;
@@ -125,10 +156,13 @@ background-color: rgb(79, 107, 99);
     display:none;
 }
 .footer{
+
+    display:block;
+    position: sticky;
     text-align: center;
     background-color: rgb(34, 32, 32);
-    padding:3em;
-    
+    padding: 1em;
+    bottom:0;
 
 }
 
