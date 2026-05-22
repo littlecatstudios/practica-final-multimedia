@@ -9,10 +9,17 @@ body{
     max-width:1000px;
     margin:5% auto; 
     padding: 10px;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
   
-    .titulo {
+.titulo {
       font-family: Catnopies;
     }
+.lema{
+    font-family: Catnopies;
+    text-align: center;
+}
 }
 .portada{
     width: 100%;
@@ -126,6 +133,14 @@ background-color: rgb(79, 107, 99);
 .btn-acordeon{
     display:none;
 }
+.footer{
+    text-align: center;
+    background-color: rgb(34, 32, 32);
+    padding:1em;
+    
+
+}
+
 
 @media (max-width: 768px) {
     .division {
