@@ -1,0 +1,174 @@
+@font-face {
+    font-family: Catnopies;
+    src: url("fuentes/Catnopies-Regular.ttf");
+}
+@font-face {
+    font-family: Kiddos;
+    src: url("fuentes/KIdDOS-Regular.ttf");
+}
+
+body{
+    font-family: Kiddos;
+    font-size: 23px;
+    background-color: black;
+    color: white; 
+    max-width:100vw;
+    margin:5% auto; 
+    padding: 10px;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+  
+.titulo {
+      font-family: Catnopies;
+    }
+.lema{
+    font-family: Catnopies;
+    text-align: center;
+}
+}
+.portada{
+    width: 100%;
+    height: auto;
+}
+.centrado{
+        text-align: center;
+    }
+.barra{
+    position: sticky;
+    top:0;
+    width: 100%;
+    background: black;
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    z-index: 100;
+    margin-bottom: 10px;
+}
+.pestanas{
+    display:flex;
+    justify-content: center;
+    text-decoration-color: white;
+
+    }
+ .pestanas button{
+        border: 2px;
+        padding: 15px 30px;
+        background-color: black;
+        outline-color: white;
+        font-family: Catnopies;
+        color: white; 
+        border-radius: 1em 1em 1em 1em;
+    }
+    .pestanas button:hover{
+        cursor: pointer;
+    }
+    .pestanas button[data-active="false"]:hover{
+        background-color: white;
+        color: black;
+
+    }
+    .pestanas button[data-active="true"]{
+        background-color: beige;
+        color: black;
+    }
+
+.division{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    margin-top:20px;
+}
+section[data-tab][data-active="false"] {
+    display: none;
+}
+.section[data-tab][data-active="true"] {
+    display: block;
+}
+
+.video-promocional{
+
+    width: 100%;
+    height: 400%;
+    justify-content: center;
+    align-content: center;
+    
+
+}
+.contenedor-del-video{
+
+    display: inline-flex;
+    height: 10vh;
+    width: 60vw;
+    border: thin;
+    border-color: white;
+
+}
+
+.sinopsis{
+    font-family: Catnopies;
+}
+
+.objetivos{
+     font-family: Catnopies ;
+     text-size-adjust: 5 em;
+}
+.columnadedonacion{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.donacion{
+background-color: black;
+border: 2px solid white;
+padding: 1em;
+margin: 20px;
+border-radius: 5px;
+box-shadow: 0 2 px 4 px white;
+}
+.faq{
+    width: 100%;
+    max-width: 800px;
+    margin:auto;
+    margin-top: 5em;
+}
+.acordeon label{
+display:block;
+padding: 20px;
+font-size: 20px;
+cursor:pointer;
+margin-bottom: 2px;
+transition: all 300ms ease;
+}
+.acordeon label:hover{
+background-color: rgb(79, 107, 99);
+}
+.acordeon .contenido-acordeon{
+    max-height: 0;
+    overflow: hidden;
+    transition:  all 300ms ease;
+}
+.btn-acordeon:checked ~ .contenido-acordeon{
+    display:block;
+    max-height: 600px;
+    padding:15px 0px;
+}
+.btn-acordeon{
+    display:none;
+}
+.footer{
+
+    display:block;
+    position: sticky;
+    text-align: center;
+    background-color: rgb(34, 32, 32);
+    padding: 1em;
+    bottom:0;
+
+}
+
+
+@media (max-width: 720px) {
+    .division {
+        grid-template-columns: 1fr;
+    }
+}
